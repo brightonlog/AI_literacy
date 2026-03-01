@@ -1,0 +1,55 @@
+# GPT-SoVITS conda 환경(gpt-sovits)에 설치할 패키지 목록
+# 아래 순서대로 설치하세요.
+#
+# [1단계] torch (CUDA 버전 먼저 설치)
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu124
+#
+# [2단계] 이 파일로 나머지 설치
+#   pip install -r requirements_gptsovits.txt
+
+# GPT-SoVITS 기본 의존성 (pyopenjtalk·jieba_fast 제외 — Windows 빌드 불가)
+numpy<2.0
+scipy
+tensorboard
+librosa==0.10.2
+numba
+pytorch-lightning>=2.4
+gradio<5
+ffmpeg-python
+onnxruntime-gpu
+tqdm
+funasr==1.0.27
+cn2an
+pypinyin
+g2p_en
+modelscope
+sentencepiece
+transformers>=4.43,<=4.50
+peft<0.18.0
+chardet
+PyYAML
+psutil
+jieba
+split-lang
+fast_langdetect>=0.3.1
+wordsegment
+rotary_embedding_torch
+ToJyutping
+g2pk2
+ko_pron
+opencc
+fastapi[standard]>=0.115.2
+x_transformers
+torchmetrics<=1.5
+pydantic<=2.10.6
+ctranslate2>=4.0,<5
+av>=11
+
+# Windows 한국어 MeCab 지원 (eunjeon 대체)
+python-mecab-ko
+
+# 한국어 자모 처리
+jamo
+
+# 모델 다운로드용
+huggingface-hub

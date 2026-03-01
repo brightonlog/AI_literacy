@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda --version)",
+      "Bash(conda env list)",
+      "Bash(conda run -n gpt-sovits python --version)",
+      "Bash(conda run -n gpt-sovits pip show huggingface-hub)",
+      "Bash(conda run -n gpt-sovits pip install huggingface-hub)",
+      "Bash(conda run -n gpt-sovits python -c \"import g2pk2; print\\(''g2pk2 OK''\\)\")",
+      "Bash(conda run -n gpt-sovits python -c \"import ko_pron; print\\(''ko_pron OK''\\)\")",
+      "Bash(conda run -n gpt-sovits python -c \":*)",
+      "Bash(conda run -n gpt-sovits pip install python-mecab-ko)",
+      "Bash(conda run -n gpt-sovits python -c \"import site; print\\(site.getsitepackages\\(\\)[0]\\)\")"
+    ]
+  }
+}
